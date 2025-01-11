@@ -1,13 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Navigation from "./components/js/navigation.js";
+import Header from "./components/js/Header";
 
 export default function Home() {
   return (
     <body>
-    <Navigation/>
-
-
+    <Header/>
     </body>
   );
 }

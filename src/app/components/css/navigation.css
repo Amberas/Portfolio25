@@ -1,3 +1,7 @@
+nav{
+    padding: 2rem;
+}
+
 .navigation_list {
     display: grid;
     grid-template-columns: 1fr auto auto;  
@@ -33,5 +37,5 @@
 .list_item--projects {
     cursor: pointer;
     text-align: right;
-    line-height: 2rem;
+    line-height: 2.4rem;
 }

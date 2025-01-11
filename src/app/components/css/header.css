@@ -1,0 +1,45 @@
+.header {
+    background-image: url("../../../../public/header.webp");
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 3rem;
+}
+
+.profile_container {
+    width: 40vw;
+    position: relative;
+    display: inline-block;
+    padding: 2vw;
+    left: 25%;
+}
+
+.profile_image {
+    border-radius: 30rem;
+    border: 6px solid white;
+}
+
+.profile_message {
+    background-color: var(--secondary-color);
+    width:max-content;
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 5rem;
+    font-weight: var(--bold);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    font-size: 18px;
+    transform: rotate(-10deg);
+}
+
+@media (min-width: 768px) {
+    .profile_container {
+      max-width: 20rem; 
+    }
+    
+    .profile_message {
+        font-size: var(--font-size-titles);
+    }
+
+    .
+  }
