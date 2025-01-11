@@ -39,3 +39,11 @@ nav{
     text-align: right;
     line-height: 2.4rem;
 }
+
+@media (min-width: 1024px) {
+    nav {
+        width: 90vw;
+        padding-top: 2rem;
+        margin: 0 auto;
+    }
+}
