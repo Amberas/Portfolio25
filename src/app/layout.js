@@ -1,8 +1,9 @@
 import "./globals.css";
 
+
 export const metadata = {
-  title: "Portfolio Amber Aspeslagh",
-  description: "I'm a product developer. I design, I develop, I deliver.",
+  title: "Amber Aspeslagh | Product Developer, Designer, Researcher Portfolio",
+  description: "Discover Amber Aspeslagh's expertise in product development. I design innovative solutions, develop cutting-edge products, and deliver exceptional results.",
 };
 
 export default function RootLayout({ children }) {

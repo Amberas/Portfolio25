@@ -18,9 +18,9 @@ export default function Header() {
         <p className="profile_message">Hello 👋</p>
         </div>
         <div className="header_containter">
-        <h1 className="header_container--title">I'm a product <span className="switch-word">developer</span></h1>
+        <h1 className="header_container--title">I'm a product <span className="switch-word">developer</span> <span className="display-none">Amber Aspeslagh</span></h1>
         <p>I design, I develop, I deliver</p>
-        <a>Let's work together</a>
+        <a className="button">Let's work together</a>
         </div>
       </header>
     );
