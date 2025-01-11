@@ -32,6 +32,15 @@
     transform: rotate(-10deg);
 }
 
+.header_containter {
+    width: 13rem;
+    margin: 0 auto;
+}
+
+.switch-word {
+    color: var(--secondary-color);
+}
+
 @media (min-width: 768px) {
     .profile_container {
       max-width: 20rem; 
@@ -40,6 +49,4 @@
     .profile_message {
         font-size: var(--font-size-titles);
     }
-
-    
   }
