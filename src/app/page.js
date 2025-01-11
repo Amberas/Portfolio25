@@ -12,7 +12,6 @@ export default function Home() {
         <meta name="author" content="Amber Aspeslagh" />
         <meta name="robots" content="index, follow" />
         <title>Amber Aspeslagh | Product Developer Portfolio</title>
-        {/* JSON-LD Schema for Person */}
         <script type="application/ld+json">
           {`
             {
@@ -25,7 +24,7 @@ export default function Home() {
                 "https://www.linkedin.com/in/amber-aspeslagh-66bb1617a/",
                 "https://www.instagram.com/amber_aspeslagh/",
                 "https://www.behance.net/amberaspeslagh1",
-                "https://www.pinterest.com/aaspeslagh0615/"
+                "https://www.pinterest.com/amberaspeslagh/"
               ]
             }
           `}
