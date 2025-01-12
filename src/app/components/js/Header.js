@@ -1,5 +1,5 @@
 import styles from "./../css/header.css";
-import Navigation from "./Navigation.js";
+import Navigation from "../js/Navigation";
 import Image from "next/image";
 import Button from "./Button.js";
 
