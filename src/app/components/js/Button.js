@@ -6,6 +6,6 @@ export default function Button() {
     const subject = "Let's build something together";
 
     return (
-        <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`} className="button">Let's work together</a>
+        <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}`} className="button">Let's work together</a>
   );
 }
