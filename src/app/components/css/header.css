@@ -33,20 +33,36 @@
 }
 
 .header_containter {
-    width: 13rem;
+    width: 50vw;
     margin: 0 auto;
+    padding-bottom: 4rem;
 }
 
 .switch-word {
     color: var(--secondary-color);
 }
 
+.header_container--subtitle {
+    line-height: 2.5rem;
+}
+
 @media (min-width: 768px) {
     .profile_container {
       max-width: 20rem; 
+
     }
     
     .profile_message {
         font-size: var(--font-size-titles);
+    }
+
+    .header_container--title {
+        font-size: var( --font-size-titles-big);
+        
+    }
+
+    .header_container--subtitle {
+        font-size: var(--font-size-titles);
+        line-height: 4rem;
     }
   }

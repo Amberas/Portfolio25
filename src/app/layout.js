@@ -11,7 +11,6 @@ export default function RootLayout({ children }) {
         <meta name="author" content="Amber Aspeslagh" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://amberaspeslagh.be" />
-        
         <script
             dangerouslySetInnerHTML={{
               __html: `

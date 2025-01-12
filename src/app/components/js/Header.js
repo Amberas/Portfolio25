@@ -1,6 +1,7 @@
 import styles from "./../css/header.css";
-import Navigation from "../js/navigation";
+import Navigation from "./Navigation";
 import Image from "next/image";
+import Button from "./Button";
 
 export default function Header() {
     return (
@@ -19,8 +20,8 @@ export default function Header() {
         </div>
         <div className="header_containter">
         <h1 className="header_container--title">I'm a product <span className="switch-word">developer</span> <span className="display-none">Amber Aspeslagh</span></h1>
-        <p>I design, I develop, I deliver</p>
-        <a className="button">Let's work together</a>
+        <p className="header_container--subtitle">I design, I develop, I deliver</p>
+        <Button/>
         </div>
       </header>
     );
