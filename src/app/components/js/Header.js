@@ -1,7 +1,7 @@
 import styles from "./../css/header.css";
-import Navigation from "./Navigation";
+import Navigation from "./Navigation.js";
 import Image from "next/image";
-import Button from "./Button";
+import Button from "./Button.js";
 
 export default function Header() {
     return (
