@@ -1,15 +1,19 @@
+'use client';
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./components/js/Header";
 import Head from "next/head";
 import PartnerList from "./components/js/PartnersList";
+import  {useEasterEgg} from '../app/hooks/useEasterEgg';
 
 export default function Home() {
+  useEasterEgg();
   return (
     <body>
       <Head>
         <meta name="description" content="Amber Aspeslagh - Product Developer Portfolio" />
-        <meta name="keywords" content="Amber Aspeslagh, Product Developer, Portfolio, Web Development, Design" />
+        <meta name="keywords" content="Amber Aspeslagh, Product Developer, Portfolio, Web Development, Design." />
         <meta name="author" content="Amber Aspeslagh" />
         <meta name="robots" content="index, follow" />
         <title>Amber Aspeslagh | Product Developer Portfolio</title>
