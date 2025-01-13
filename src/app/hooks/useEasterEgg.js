@@ -1,31 +1,25 @@
-"use client";
+'use client';
 
 import { useEffect } from 'react';
 
 export const useEasterEgg = () => {
     useEffect(() => {
-        const targetNode = document.body; // Observe the entire body
-        const config = { childList: true, subtree: true };
+        const observer = new MutationObserver(() => {
+            const currentLang = document.documentElement.lang;  // Get the current lang attribute
+            console.log('Current language:', currentLang);
 
-        const callback = (mutationsList) => {
-            mutationsList.forEach((mutation) => {
-                if (mutation.type === 'childList') {
-                    console.log("translation detected");
-                    // Replace specific text when detected
-                    document.querySelectorAll('.header_container--title').forEach((el) => {
-                        if (el.innerText.includes('Expected Translated Text')) {
-                            el.innerText = 'Veni, vedi, vici 🏛️🍷';
-                        }
-                    });
-                }
-            });
-        };
+            if (currentLang && currentLang !== 'en') {  // Check if the language is not English
+                alert('Google Translate has changed the language!');
+                const subtitle = document.querySelector('.header_container--subtitle');
+                    if (subtitle && subtitle.innerText !== 'Veni, vedi, vici 🏛️🍷') {
+                        // Only change if the text hasn't been modified already
+                        subtitle.innerHTML = `<span translate="no">Veni, vedi, vici 🏛️🍷</span>`;
+                    }
+            }
+        });
 
-        const observer = new MutationObserver(callback);
-        observer.observe(targetNode, config);
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
 
-        return () => {
-            observer.disconnect(); // Clean up observer on component unmount
-        };
+        return () => observer.disconnect(); // Clean up observer on component unmount
     }, []);
 };
