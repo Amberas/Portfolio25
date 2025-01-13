@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./components/js/Header";
 import Head from "next/head";
+import PartnerList from "./components/js/PartnersList";
 
 export default function Home() {
   return (
@@ -39,7 +40,10 @@ export default function Home() {
           title="Google Tag Manager"
         />
       </noscript>
-      <Header />
+      <Header/>
+      <main>
+      <PartnerList/>
+      </main>
       </body>
   );
 }
