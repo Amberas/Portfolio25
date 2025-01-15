@@ -1,15 +1,15 @@
 .project-list {
     width: 80vw;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 
 .project-list--item {
-    margin-top: 4rem;
     width: fit-content;
     list-style: none;
     color: var(--color);
     line-height: 1.5rem;
+    margin-bottom: 4rem;
 }
 
 
@@ -46,6 +46,10 @@ hr {
     margin-bottom:  3rem;
 }
 
+.project-list--client {
+    color: var(--support-color);
+    font-size: var(--font-size-text-big);
+}
 
 @media (min-width: 1024px) {
 

@@ -3,6 +3,7 @@
   --foreground: #D3F1FF;
   --color: #002150;
   --secondary-color: #306FFF;
+  --support-color: #8CA6B4;
   --font-size: 14px;
   --font-size-text-big: 20px;
   --font-size-titles: 25px;
@@ -51,7 +52,7 @@ a {
 
 .main-title {
   text-align: center;
-  margin: 3rem;
+  
 }
 
 @media (prefers-color-scheme: dark) {

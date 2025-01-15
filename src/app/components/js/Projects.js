@@ -30,6 +30,9 @@ export default function Projects() {
                         alt={project.attributes.Title}
                         />
                         <div className="project-list--container">
+                        <p className="project-list--client">
+                    {project.attributes.Client}
+                    </p>
                     <h2 className="project-list--title">{project.attributes.Title}</h2> 
                     <p className="project-list--text">
                     {project.attributes.Description}

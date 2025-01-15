@@ -7,7 +7,7 @@ import Button from "./Button.js";
 import { useEffect, useState } from 'react';
 
 export default function Header() {
-  const [fontSize, setFontSize] = useState("45px"); 
+  /*const [fontSize, setFontSize] = useState("45px"); 
   const [opacity, setOpacity] = useState(1);
 
   useEffect(() => {
@@ -21,20 +21,20 @@ export default function Header() {
       }
     };
 
-    window.addEventListener('scroll', scrollFunction);
+   window.addEventListener('scroll', scrollFunction);
 
-    return () => {
+   return () => {
       window.removeEventListener('scroll', scrollFunction);
     };
-  }, []); 
+  }, [])*/; 
     return (
       <header className="header">
          <Navigation/>
         <div className="profile_container">
         <Image
-        style={{ 
+        style={{/* 
           opacity, 
-          transition: 'opacity 0.3s ease' }}
+          transition: 'opacity 0.3s ease' */}}
         className="profile_image"
          src="/profile.webp"
          layout="responsive"
@@ -45,9 +45,9 @@ export default function Header() {
         <p className="profile_message">Hello 👋</p>
         </div>
         <div className="header_containter">
-        <h1 className="header_container--title" style={{ 
+        <h1 className="header_container--title" style={{ /*
         fontSize, 
-        transition: 'font-size 0.3s ease' }}>I'm a product <span className="switch-word">developer</span> <span className="display-none">Amber Aspeslagh</span></h1>
+        transition: 'font-size 0.3s ease' */}}>I'm a product <span className="switch-word">developer</span> <span className="display-none">Amber Aspeslagh</span></h1>
         <p className="header_container--subtitle">I design, I develop, I deliver</p>
         <Button/>
         </div>
