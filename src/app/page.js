@@ -6,6 +6,7 @@ import Header from "./components/js/Header";
 import Head from "next/head";
 import PartnerList from "./components/js/PartnersList";
 import  {useEasterEgg} from '../app/hooks/useEasterEgg';
+import Projects from "./components/js/Projects";
 
 export default function Home() {
   useEasterEgg();
@@ -47,6 +48,8 @@ export default function Home() {
       <Header/>
       <main>
       <PartnerList/>
+      <h1 className="main-title">What I did</h1>
+      <Projects/>
       </main>
       </body>
   );

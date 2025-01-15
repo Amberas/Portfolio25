@@ -46,6 +46,7 @@
     line-height: 2.5rem;
 }
 
+
 @media (min-width: 768px) {
     .profile_container {
       max-width: 20rem; 

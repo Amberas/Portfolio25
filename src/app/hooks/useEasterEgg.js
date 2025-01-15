@@ -15,6 +15,8 @@ export const useEasterEgg = () => {
                         // Only change if the text hasn't been modified already
                         subtitle.innerHTML = `<span translate="no">Veni, vedi, vici 🏛️🍷</span>`;
                     }
+
+                const contactButton = document.querySelector('.header_container--subtitle');
             }
         });
 
